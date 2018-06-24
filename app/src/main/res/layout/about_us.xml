@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@mipmap/back_arrow"
+
+                android:fontFamily="monospace"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="About Us"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|left"
+                android:text="At Zephyrs, we marry technology with innovation and we do so by using our advanced development team to design and implement turnkey projects. At the core of our team, is the desire to transform our clients' business with pioneering solutions that are a class apart. " />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Our solution is designed to reduce stress levels in university going students. Many changes are experienced during studies at school or college and it can be overwhelming and stressful for example Homesickness, final exam stress, dealing with common illness and depression etc. It is critical that students deal with these issues, recognize their emotional imbalances and not allow them to interfere with their ability to perform all the academic functions in their day-to- day life. Practicing healthy activities daily will improve students well-being and using university resources can help facilitate a happy, successful experience. As such our application revolves around:" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="1. Allow students to track and identify the stress levels they face each day." />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="2. Provide facts about stress effects in students and its impact." />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="3. Allow students to log their daily healthy habits that will reduce the stress level for the day." />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="4. Generate a weekly report that showcases the positive impact of using the application in your lives." />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="" />
+
+            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--xmlns:tools="http://schemas.android.com/tools"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="vertical"-->
+            <!--tools:context=".MainActivity" >-->
+
+            <!--<WebView-->
+            <!--android:id="@+id/webView1"-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="match_parent"/>-->
+            <!--<WebView-->
+            <!--android:id="@+id/webView2"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="match_parent"/>-->
+            <!--<WebView-->
+            <!--android:id="@+id/webView3"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="match_parent"/>-->
+            <!--<WebView-->
+            <!--android:id="@+id/webView4"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="match_parent"/>-->
+            <!--<WebView-->
+            <!--android:id="@+id/webView5"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="match_parent"/>-->
+            <!--<WebView-->
+            <!--android:id="@+id/webView6"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="match_parent"/>-->
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+</RelativeLayout>
+    </ScrollView>
+</LinearLayout>

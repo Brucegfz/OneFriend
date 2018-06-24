@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Onefriend</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">434479083615983</string>
+    <string name="fb_login_protocol_scheme">fb434479083615983</string>
+
+    <string name="google_id">523673959561-r4gefi36trn10v6otqm9gmuthbtsjl08.apps.googleusercontent.com</string>
+</resources>

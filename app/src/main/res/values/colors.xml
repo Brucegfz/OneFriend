@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg">#17202A</color>
+    <color name="white">#FDFEFE</color>
+    <color name="bar1">#EC7063</color>
+    <color name="bar2">#76D7C4</color>
+    <color name="bar3">#F4D03F</color>
+    <color name="bottomGreen">#009688</color>
+    <color name="bottomWhite">#FDFEFE</color>
+    <color name="greenButton">#a5d079</color>
+    <color name="buttonColor">#7ad0cb</color>
+    <color name="yesButton">#f4a49e</color>
+    <color name="noButton">#7ad0cb</color>
+    <color name="notsureButton">#ffcc65</color>
+    <color name="male">#3498DB</color>
+    <color name="female">#FF4081</color>
+    <color name="person">#F4D03F</color>
+    <color name="ageLow">#F5B041</color>
+    <color name="ageHigh">#DC7633</color>
+    <color name="text">#666666</color>
+</resources>

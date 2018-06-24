@@ -1,0 +1,163 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zephyrs.android.onefriend.BottomBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/report_page"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/reportlogo"
+                android:fontFamily="monospace"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/reportselect"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="27dp"
+                android:layout_marginStart="27dp"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="Your Report"
+                android:textAllCaps="false"
+                android:textColor="@color/buttonColor"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buttonquestion"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:paddingTop="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/help"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="100dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/yes"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="14dp"
+                            android:gravity="center"
+                            android:text="FEEL STRESSED TODAY?"
+                            android:textSize="23dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <Button
+                                android:id="@+id/yes"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_above="@+id/notsure"
+                                android:layout_alignLeft="@+id/notsure"
+                                android:layout_alignStart="@+id/notsure"
+                                android:layout_weight="1"
+                                android:background="@drawable/yes_button_click"
+                                android:text="Yes"
+                                android:textColor="@drawable/yes_text_click"
+                                android:textSize="50dp" />
+
+                            <Button
+                                android:id="@+id/no"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_alignEnd="@+id/notsure"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/no_button_click"
+                                android:text="No"
+                                android:textColor="@drawable/no_text_button"
+                                android:textSize="50dp" />
+
+                        </LinearLayout>
+
+
+                        <Button
+                            android:id="@+id/notsure"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_below="@+id/no"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/notsure_button_click"
+                            android:text="Not Sure"
+                            android:textColor="@drawable/notsure_text_button"
+                            android:textSize="50dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

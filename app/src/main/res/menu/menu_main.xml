@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zephyrs.android.onefriend.MainActivity">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/bottom_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/track"
+        android:title="Tracker" />
+    <item
+        android:id="@+id/navigation_activity"
+        android:icon="@drawable/bottom_sport"
+        android:title="Suggestion" />
+
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/bottom_profile"
+        android:title="Setting" />
+
+</menu>

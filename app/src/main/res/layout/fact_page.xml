@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/relativeLayout">
+
+                <Button
+                    android:id="@+id/back_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@mipmap/back_arrow"
+
+                    android:fontFamily="monospace"
+                    android:textAllCaps="false"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+        </RelativeLayout>
+
+</LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/rootlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    ></LinearLayout>
+
+                <Button
+                    android:id="@+id/studyinstress"
+                    android:layout_width="300dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/stressinstudent"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_alignLeft="@+id/causeofstress"
+                    android:layout_alignStart="@+id/causeofstress"
+                    android:text="Stress in students"
+                    android:gravity="left|center"
+                    android:paddingLeft="20dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="13dp" />
+
+                <Button
+                    android:id="@+id/causeofstress"
+                    android:layout_width="300dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/causeofstress"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/studyinstress"
+                    android:text="Cause of stress"
+                    android:gravity="left|center"
+                    android:paddingLeft="20dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true" />
+
+
+                <Button
+                    android:id="@+id/quickfixes"
+                    android:layout_width="300dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/quickfixes"
+                    android:layout_below="@+id/causeofstress"
+                    android:layout_alignLeft="@+id/causeofstress"
+                    android:layout_alignStart="@+id/causeofstress"
+                    android:text="Quick fixes"
+                    android:gravity="left|center"
+                    android:paddingLeft="20dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="13dp" />
+
+                <Button
+                    android:id="@+id/didyouknow"
+                    android:layout_width="300dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/didyouknow"
+                    android:layout_marginTop="11dp"
+                    android:layout_below="@+id/quickfixes"
+                    android:layout_alignLeft="@+id/quickfixes"
+                    android:text="Did you know"
+                    android:textColor="@color/white"
+                    android:gravity="left|center"
+                    android:paddingLeft="20dp"
+                    android:textSize="17dp"
+                    android:layout_alignStart="@+id/quickfixes" />
+
+
+
+
+        </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

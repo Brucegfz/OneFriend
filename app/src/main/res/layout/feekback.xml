@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textStyle="normal"
+            android:fontFamily="monospace"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:background="@mipmap/back_arrow"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="FEEDBACK" />
+
+        <TextView
+            android:id="@+id/subjecttext"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:gravity="left"
+            android:text="Subject" />
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:inputType="textMultiLine"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:minLines="1"
+            android:hint="Subject..."
+            android:padding="5dip"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15dip"
+            />
+
+
+        <TextView
+            android:id="@+id/commenttext"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:gravity="left"
+            android:layout_gravity="center_horizontal"
+            android:text="comment:" />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext"
+        android:inputType="textMultiLine"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:minLines="5"
+        android:hint="Describe the issue you want o report..."
+        android:padding="5dip"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip"
+        />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:background="@drawable/done_click"
+        android:textColor="@drawable/done_text_click"
+        android:text="Submit" />
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

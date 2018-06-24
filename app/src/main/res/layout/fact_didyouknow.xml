@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:backgroundTint="#17202A"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/close"
+            android:backgroundTint="@color/white"
+            android:fontFamily="monospace"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/appear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/button3qe"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="FACTS" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/barcharttext"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:background="@color/buttonColor"
+            android:textSize="20dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchart"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"></com.github.mikephil.charting.charts.BarChart>
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="Gender"
+            android:textColor="@color/bg"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <RadioGroup
+                android:id="@+id/genderradioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/gendertv_radio"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Male"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/question_click"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Male"
+                    android:textColor="@drawable/question_text_click" />
+
+                <RadioButton
+                    android:id="@+id/Female"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/question_click"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Female"
+                    android:textColor="@drawable/question_text_click" />
+
+                <RadioButton
+                    android:id="@+id/Person"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/question_click"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Person"
+                    android:textColor="@drawable/question_text_click" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="Age"
+            android:textColor="@color/bg"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <RadioGroup
+                android:id="@+id/ageradioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/gendertv_radio"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/age16"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/question_click"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="16 to 24"
+                    android:textColor="@drawable/question_text_click" />
+
+                <RadioButton
+                    android:id="@+id/age25"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/question_click"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="25 to 34"
+                    android:textColor="@drawable/question_text_click" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+    </ScrollView>
+</LinearLayout>

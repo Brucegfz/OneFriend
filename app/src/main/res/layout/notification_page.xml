@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textStyle="normal"
+            android:fontFamily="monospace"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:background="@mipmap/back_arrow"
+            />
+    </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="Set Reminder"
+            android:textSize="30dp" />
+
+        <TimePicker
+            android:id="@+id/timepicker"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/next2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:timePickerMode="spinner" />
+
+
+        <Button
+            android:id="@+id/setalarm"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/skip2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/done_click"
+            android:text="Set"
+            android:textColor="@drawable/done_text_click"
+            android:textSize="25dp" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
